@@ -40,16 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina, introductie van het spel, characters, dlcs, news
-  <img src="readme-images/homepage1.png" width="375px" alt="eerste pagina">
-  <img src="readme-images/hp2.png" width="375px" alt="eerste pagina">
-  <img src="readme-images/hp3.png" width="375px" alt="eerste pagina">
-  <img src="readme-images/hp4.png" width="375px" alt="eerste pagina">
+  <img src="readme-images/homepage1.PNG" width="375px" alt="eerste pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Create/explore page, Hoe speel ik het spel, diepere uitleg 
-  <img src="readme-images/cr1.png" width="375px" alt="tweede pagina">
-  <img src="readme-images/cr2.png" width="375px" alt="tweede pagina">
-  <img src="readme-images/cr3.png" width="375px" alt="tweede pagina">
+  <img src="readme-images/cr1.PNG" width="375px" alt="tweede pagina">
  
 </details>
 
