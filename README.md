@@ -81,24 +81,22 @@ Mogelijke oplossingen:
 
 
   #### Muis en Toetsenbord 
- Bevinding 1: Tab werkt op alle interactieve elementen.
- Bevinding 2: Bij tab pakt eerst alle tekst als gewoon ‘voertekst’. Verteld ook niet hoe je hiermee naar de broodtekst kan. Hoe switch ik van de links, naar alle tekst dat word uitgesproken?
+- Tab werkt op alle interactieve elementen.
+- Bij tab pakt eerst alle tekst als gewoon ‘voertekst’. Verteld ook niet hoe je hiermee naar de broodtekst kan. Hoe switch ik van de links, naar alle tekst dat word uitgesproken?
 
 Mogelijke oplossingen: 
 - Zoals hierboven.
 
   #### Motoriek (shocks, elastiekjes)
- Bevinding 1: Shocks: Alle buttons zijn goed uit elkaar gezet zodat er geen moeite is met de juiste aan te klikken. De buttons zijn ook groot genoeg om er niet naast te klikken.
- Bevinding 2: Elastiekjes: Hiermee was het vasthouden van de mobiel zonder te laten vallen de grootste uitdaging. 
+- Shocks: Alle buttons zijn goed uit elkaar gezet zodat er geen moeite is met de juiste aan te klikken. De buttons zijn ook groot genoeg om er niet naast te klikken.
+- Elastiekjes: Hiermee was het vasthouden van de mobiel zonder te laten vallen de grootste uitdaging. 
 <img src="readme-images/shocks.jpg" width="375px" alt="shocks">
 
-Mogelijke oplossingen: 
-- 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-Bevinding 1: Darkmode word alleen dark op de blokjes en buttons. De achtergrond en plaatjes blijven heel vel/licht. Er is veel witruimte dus oogt de site nog steeds niet echt ’dark’.
-Bevinding 2: Er is veel contrast tussen de kleuren van de elementen, op beide kleurblinden. 
-Bevinding 3: De footer is wel erg klein voor slechtziende (wazig).
+- Darkmode word alleen dark op de blokjes en buttons. De achtergrond en plaatjes blijven heel vel/licht. Er is veel witruimte dus oogt de site nog steeds niet echt ’dark’.
+- Er is veel contrast tussen de kleuren van de elementen, op beide kleurblinden. 
+- De footer is wel erg klein voor slechtziende (wazig).
 <img src="readme-images/darkmode.png" width="375px" alt="visueel">
 <img src="readme-images/deureranopia.png" width="375px" alt="visueel">
 <img src="readme-images/tritanopia.png" width="375px" alt="visueel">
