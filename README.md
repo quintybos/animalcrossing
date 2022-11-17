@@ -114,11 +114,11 @@ Mogelijke oplossingen:
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### de eerste pagina: 
+  <img src="readme-images/pagina1.png" width="375px" alt="breakdown van de 1ste pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### de tweede pagina: 
+  <img src="readme-images/pagina2.png" width="375px" alt="breakdown van 2de pagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
