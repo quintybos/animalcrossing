@@ -140,14 +140,14 @@ s
   - de juiste content halen uit de site.
   - de site bestuderen, hoe doen hun dat?
   - divs gebruiken om blokken te creeren achter de content.
-  <img src="readme-images/week2.png" width="375px" 
+  <img src="readme-images/week2.png" width="375px" alt=""> 
 
   Dit was lastig:
   - nth-last-of-type, first-of-type etc was lastig met img, hij pakte steeds alle img ipv een specifieke.
   - flexbox niet vaak gebruikt omdat het met position vaak beter ging (ik had veel content dat over elkaar heen ging). Vond het lastig werken en is ook nergens echt goed gelukt.
   - < strong > werkt ook niet.
   
-  <img src="readme-images/week2-2.png" width="375px" 
+  <img src="readme-images/week2-2.png" width="375px"alt="">
 
   Vragen om te stellen:
   - Hoe is mijn gebruik van classes en divs? Is dit de juiste manier? Hoe zou dit beter kunnen?
