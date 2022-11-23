@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Zilla+Slab:wght@600&display=swap');
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -12,23 +14,609 @@ button, summary {
 
 
 
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-brown:#6b5c43;
+	--color-white: rgb(248, 242, 218);
+	--color-yellow: rgb(251, 225, 107);
+	--color-blue: #f0fff5;
+	--color-teal: #008077;	
+	background-size: 55em;
+	background-image: url("../../images/bg-licht.jpeg");
+	
+}
+
+
+/****************/
+/* Algemene Tekst/lijsten/fotos */
+/****************/
+
+body {
+	margin-left: -.1em;
+	margin-right: -.1em;
+}
+
+h1 { 
+	color:var(--color-white);
+	font-family: 'Zilla Slab', serif;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+h2 {
+	color:var(--color-brown);
+	font-family: 'Zilla Slab', serif;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+
+}
+
+h3 {
+	color:var(--color-brown);
+	font-family: 'Zilla Slab', serif;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+
+}
+
+p {
+	color:var(--color-brown);
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 0.9em;
+	line-height: 1.5;
+	text-align: center;
+	
+}
+
+a {
+	color:var(--color-brown);
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: small;
+
+}
+
+
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+
+/****************/
+/* Section styling */
+/****************/
+
+section {
+	padding: 2em;
+	
+}
+
+section a {
+	position: relative;
+	padding: 0.5em;
+	margin-top: 2em;
+
+	width: 50%;
+
+	text-align: center;
+	text-decoration: none;
+
+	
+}
+
+/****************/
+/* HEADER */
+/****************/
+header {
+	margin-top: -.3em;
+	position: relative;
+
+}
+
+.checkbox-containter {
+	display: block;
+	position: relative;
+	padding: .5em;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+
+	color: white;
+	font-family: 'Zilla Slab', serif;
+	background-color: var(--color-teal);
+}
+
+.checkbox-containter input {
+	position: absolute;
+	opacity: 0;
+	height: 0;
+	width: 0;
+  }
+
+.checkmark {
+	position: absolute;
+	top: 1;
+	left: 8em;
+	height: 20px;
+	width: 20px;
+	background-color: var(--color-teal);
+	border: 2px solid white;
+}
+
+  
+/* Wanner aangeklikt, word checkbox wit */
+.checkbox-containter input:checked ~ .checkmark {
+	background-color: white;
+}
+
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */ 
+
+
+
+nav {
+	background-color: var(--color-yellow);
+	padding: 1px;	
+}
+
+.logoswitch {
+	position: absolute;
+	width: 6.6em;
+	top: 0em;
+	right: 0em;
+	
+}
+
+
+/****************/
+/* Section 1 Animal crossing */
+/****************/
+.page1 section:nth-of-type(1) {
+	margin-top: -2em;
+	margin-bottom: 20em;
+	margin-left: -10em;
+	position: relative;
+	
+}
+
+.page1 .beginfoto {
+	position: absolute;	
+	width: 40em;
+	z-index: -1;
+	
+}
+
+.page1 .logo {
+	position: absolute;	
+	width: 12em;
+	top:5em;
+	left: 17.5em;
+
 }
 
 
 
+/****************/
+/* Section 2 Welcome! */
+/****************/
+
+.page1 section:nth-of-type(2) {
+	background-color: var(--color-brown);
+	padding-top: 3em;
+	padding-bottom: 5em;
+	
+}
+
+.page1 section:nth-of-type(2) h1 {
+	margin: -.5em 0em -.5em 0em;
+}
+
+
+.page1 section:nth-of-type(2) p {
+	color:var(--color-white);
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	  
+}
+
+.page1 section:nth-of-type(2) h3 {
+	background-color: var(--color-yellow);
+	padding: 1em;
+	padding-top: .7em;
+	padding-bottom: 2em;
+	margin-bottom: -1.2em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	border-radius: .5em;
+	  
+}
+
+.page1 section:nth-of-type(2) iframe {
+
+border: .3em solid white;
+box-shadow: 0px 0px 3px rgb(43, 26, 3);
+	
+
+}
 
 
 /****************/
-/* JOUW STYLING */
+/* Section 3 Dream getaway */
+/****************/
+.page1 section:nth-of-type(3) {
+position: relative;
+margin-bottom: 23em;
+}
+
+.page1 section:nth-of-type(3) h2 {
+	margin-top: -3.5em ;
+	margin-bottom: 3em;
+	margin-left:2.3em;
+	margin-right:2.3em;
+	z-index: 1;
+
+	background-color: var(--color-blue);
+	padding: .7em;
+	
+}
+
+.page1 .nook {
+	position: absolute;
+	width: 8em;
+	left: 5em;
+	z-index: 2;
+
+}
+
+.page1 .spel {
+	position: absolute;
+	width: 9em;
+	top:5em;
+	left: 12em;
+	z-index: 1;
+
+}
+
+
+.page1 section:nth-of-type(3) a {
+	background-color: var(--color-brown);
+	font-family: 'Zilla Slab', serif;
+	color: var(--color-white);
+	border-radius: 1em;
+	
+	left:8em;
+	top:22em;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	margin: 1em;
+	
+	z-index: 1;
+	
+}
+
+.page1 .buy-kaart {
+	position: absolute;
+
+	background-color: white;
+	border: .7em solid var(--color-yellow);
+	border-radius: 1em;
+
+	padding: 10.5em;
+	/*lengte van blok*/
+	padding-bottom: 7em;
+	top: 6em;
+	left: 2em;
+	z-index: -1;
+}
+
+/****************/
+/* Section 4  Island news */
 /****************/
 
-/* jouw code */
+.page1 section:nth-of-type(4) {
+	background-image: url("../../images/hout.webp");
+	position:relative;
+	z-index: 1;
+	padding-bottom: 20em;
+}
 
+.page1 section:nth-of-type(4) h2{
+	color: var(--color-white);
+	margin-top: -3.5em ;
+	margin-bottom: 3em;
+	margin-left:4em;
+	margin-right:4em;
+	z-index: 1;
+
+	background-color: var(--color-teal);
+	padding: .7em;
+	
+}
+
+.page1 section:nth-of-type(4) h3{
+	color: var(--color-white);
+	font-size: 1.2em;
+	padding-top: 3em;
+	
+}
+
+.page1 section:nth-of-type(4) span{
+	color: var(--color-yellow);
+	font-size: 1.5em;
+	z-index: 1;
+	
+}
+
+.page1 section:nth-of-type(4) img:first-of-type{
+	margin-left: 7em;
+ 	width: 8em;
+	position: absolute;
+	z-index: 1;
+}
+
+.page1 .verjaardag-kaart {
+	position: absolute;
+	background-image: url("../../images/pattern-leaves-green.jpeg");
+	border: .7em solid var(--color-yellow);
+	border-radius: 1em;
+
+	padding: 10.5em;
+	/*lengte van blok*/
+	padding-bottom: 13em;
+	top: 4em;
+	left: 2em;
+	z-index: -1;
+	
+}
+
+
+/****************/
+/* Section 5 Villager opinions */
+/****************/
+
+.page1 section:nth-of-type(5) h2{
+	font-size: 1.3em;
+} 
+
+/* verdeler img */ 
+.page1 section:nth-of-type(5) .verdeler{
+	width: 9em;
+	background: 0em;
+	border: 0em;
+} 
+
+.page1 section:nth-of-type(5) ul{
+	margin-left: -1em;
+	text-align: left;
+	position: relative;
+	
+}
+
+ /* ronde avatars */
+ .page1 section:nth-of-type(5) img{
+	width: 3em;
+	border: .2em solid white;
+	border-radius: 50%;
+	background-color: salmon;
+	
+}
+
+.page1 section:nth-of-type(5) p{
+	text-align: left;
+	
+}
+
+/****************/
+/* Section 6 CREATE */
+/****************/
+
+/* verdeler img */ 
+.page1 section:nth-of-type(6) {
+	background-image: url("../../images/bg-donker.png");
+	background-size: 35em;
+	padding-left: 4em;
+	padding-right: 4em;
+	padding-bottom: 8em;
+	position: relative;
+	z-index: -1;
+} 
+
+.page1 .bloem-icon {
+	width: 2.2em;
+
+	position: absolute;
+	top:5em;
+	left: 12em;
+
+	z-index: 1;
+}
+
+.page1 section:nth-of-type(6) h2{
+	margin-top: 5em;
+	font-size: 1.4em;
+	z-index: 1;
+
+}
+
+
+
+.page1 section:nth-of-type(6) a {
+	display: flex;
+	justify-content: center;
+	margin-left: 5.5em;
+
+	background-color: var(--color-brown);
+	font-family: 'Zilla Slab', serif;
+	color: var(--color-white);
+	border-radius: 1em;
+
+	padding-top: .7em;
+	padding-bottom: .7em;
+	z-index: 1;
+
+}
+
+.page1 section:nth-of-type(6) figure {
+	position: relative;
+	margin-bottom: 4em;
+}
+
+.boom {
+	width: 6em;
+	position: absolute;
+	right: -5em;
+	top:1em;
+}
+
+.tent {
+	margin-left: -5em;
+	width: 20em;
+
+}
+
+.bloem { 
+	width: 4.6em;
+	position: absolute;
+	left: -5em;
+}
+
+.knutsel {
+	position: absolute;
+	top:13em;
+	left: -1em;
+	width: 18em;
+
+}
+
+.page1 .create-kaart {
+	position: absolute;
+
+	background-color: white;
+	border: .7em solid var(--color-yellow);
+	border-radius: 1em;
+
+	padding: 10.5em;
+	/*lengte van blok*/
+	padding-bottom: 8em;
+	top: 3em;
+	left: 2em;
+	z-index: -1;
+}
+
+
+/****************/
+/* Footer */
+/****************/
+
+footer {
+background-color: #f8eebc;
+background-image: url("../../images/footer-illustration.svg");
+background-position: 50% 100.5%;
+background-repeat: repeat-x;
+background-size: auto 110px;
+
+padding: 2em;
+padding-bottom: 8em;
+
+}
+
+
+footer figure {
+	margin-left: 8em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+
+}
+
+footer p, a {
+	font-size: .7em;
+	
+}
+
+footer ul {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2em;
+	
+}
+
+footer li img {
+	width: 3em;
+
+}
+
+footer a {
+
+	display:flex;
+	justify-content: center;
+	padding: 1em;
+}
+
+strong { font-weight: bold; }
+
+
+/****************/
+/* Section 1 Animal crossing */
+/****************/
+.page2 video {
+	margin-left: -10em;
+	margin-top: -2em;
+	width: 40em;
+	
+}
+
+.page2 section:nth-of-type(1) {
+	position: relative;
+	
+	
+}
+
+
+.page2 section:nth-of-type(1) img {
+	position: absolute;
+	bottom: 3.5em;
+	left: 9.5em;
+	width: 7em;
+}
+
+.page2 section:nth-of-type(1) h2 {
+	position: absolute;
+	bottom: 0em;
+	left: 4.5em;
+	background-color: var(--color-white);
+	padding: 1.2em;
+	padding-top: 1.3em;
+	padding-left: 4em;
+	padding-right: 4em;
+	
+	
+}
+
+
+
+/****************/
+/* Section 2 Create your gateway */
+/****************/
+
+.page2 section:nth-of-type(2) { 
+	background-color: white;
+	margin-top: -2.2em;
+	margin-bottom: 2em;
+}
+
+.page2 section:nth-of-type(2) h2 { 
+	font-size: 1.3em;
+}
+
+.page2 section:nth-of-type(2) img { 
+	width: 15em;
+	margin-left: 3.5em;
+	margin-top: 1.5em;
+}
