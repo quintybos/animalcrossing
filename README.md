@@ -147,7 +147,7 @@ s
   - flexbox niet vaak gebruikt omdat het met position vaak beter ging (ik had veel content dat over elkaar heen ging). Vond het lastig werken en is ook nergens echt goed gelukt.
   - < strong > werkt ook niet.
   
-  <img src="readme-images/week2-2.png" width="375px"alt="">
+  <img src="readme-images/week2-2.png" width="375px" alt="">
 
   Vragen om te stellen:
   - Hoe is mijn gebruik van classes en divs? Is dit de juiste manier? Hoe zou dit beter kunnen?
