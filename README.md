@@ -174,20 +174,22 @@ s
   ### Stand van zaken
   Dit ging goed: 
   - Animatie/menu opdrachten waren leuk en redelijk makkelijk om te maken.
+  - Flexbox naast elkaar zetten elementen.
+  <img src="readme-images/week3-goed2.png" width="375px" alt="">  
   - Position absolute gebruiken om plaatjes over elkaar heen te zetten voor dit onderdeel:
   <img src="readme-images/week3-goed.png" width="375px" alt="">  
 
   Dit was lastig:
-  - Het mobiel responsive maken liep ik heel erg bij vast waardoor ik veel tijd moest besteden aan het verandere (vooral inkorten) van de css. Het had teveel position gebruikt waardoor de content te straks was gepositioneerd. Dit was moeilijk om weer losjes te krijgen. 
+  - Het mobiel responsive maken liep ik heel erg bij vast waardoor ik veel tijd moest besteden aan het veranderen (vooral inkorten) van de css. Het had teveel position gebruikt waardoor de content te strak was gepositioneerd. Dit was moeilijk om weer losjes te krijgen. 
 
-  - Plaatjes centreren was lastig
+  - Plaatjes centreren.
   <img src="readme-images/week3-slecht.png" width="375px" alt=""> 
 
  ### Vragen om te stellen:
 Hoofd Vragen:
-- Hulp met het ‘telefoon responsive’ krijgen van de afbeeldingen.
+- Hulp met het ‘telefoon responsive’ krijgen van de afbeeldingen. En de gekleurde blokken eronder.
 - Gebruik ik goede elementen en benamingen? Teveel position of margins/paddings? Is flexbox makkelijker?
-- Menu plaatjes het krijg ik ze op z’n plek?
+- Menu sluiten button, hoe centreer ik die het best?
 
 Meer bijzaken:
 - Hoe maak ik een img carrousel?
