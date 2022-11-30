@@ -5,6 +5,8 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
 button, summary {
@@ -19,12 +21,15 @@ button, summary {
 /*********************/
 :root {
 	--color-brown:#6b5c43;
-	--color-white: rgb(248, 242, 218);
 	--color-yellow: rgb(251, 225, 107);
 	--color-blue: #f0fff5;
-	--color-teal: #008077;	
+	--color-green: #e5ffe6;
+	--color-teal: #008077;
+	--color-white: rgb(248, 242, 218);
+	--color-extrawhite: white;
+
 	background-size: 55em;
-	background-image: url("../../images/bg-licht.jpeg");
+	background-image: url("./../images/bg-licht.jpeg");
 	
 }
 
@@ -34,8 +39,12 @@ button, summary {
 /****************/
 
 body {
+	/* margin-top: -.1em;
 	margin-left: -.1em;
 	margin-right: -.1em;
+	margin-bottom: -.1em; */
+	width: 100vw;
+	
 }
 
 h1 { 
@@ -58,7 +67,14 @@ h3 {
 	color:var(--color-brown);
 	font-family: 'Zilla Slab', serif;
 	font-size: 1em;
-	font-weight: 700;
+	text-align: center;
+
+}
+
+h4 {
+	color:var(--color-brown);
+	font-family: 'Zilla Slab', serif;
+	font-size: 0.8em;
 	text-align: center;
 
 }
@@ -76,13 +92,14 @@ a {
 	color:var(--color-brown);
 	font-family: 'Libre Franklin', sans-serif;
 	font-size: small;
+	
 
 }
 
 
 ul {
-	margin:0;
-	padding:0;
+	/* margin:0;
+	padding:0; */
 	list-style:none;
 }
 
@@ -91,17 +108,16 @@ ul {
 /* Section styling */
 /****************/
 
-section {
-	padding: 2em;
+/* section {
+	/* padding: 2em; */
 	
-}
 
 section a {
 	position: relative;
 	padding: 0.5em;
 	margin-top: 2em;
 
-	width: 50%;
+	/* width: 50%; */
 
 	text-align: center;
 	text-decoration: none;
@@ -113,22 +129,26 @@ section a {
 /* HEADER */
 /****************/
 header {
-	margin-top: -.3em;
-	position: relative;
-
+	position: sticky;
+	z-index: 1;	
+	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
+	
 }
 
+/* reduce motion */
 .checkbox-containter {
 	display: block;
 	position: relative;
 	padding: .5em;
-	padding-top: 1em;
+	padding-top: .7em;
 	padding-left: 1em;
-	padding-bottom: 1em;
+	padding-bottom: .7em;
 
-	color: white;
+	color: var(--color-extrawhite);
 	font-family: 'Zilla Slab', serif;
-	background-color: var(--color-teal);
+	background-image: url("../../images/groen-stip.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .checkbox-containter input {
@@ -145,59 +165,193 @@ header {
 	height: 20px;
 	width: 20px;
 	background-color: var(--color-teal);
-	border: 2px solid white;
+	border: 2px solid var(--color-extrawhite);
 }
 
   
 /* Wanner aangeklikt, word checkbox wit */
 .checkbox-containter input:checked ~ .checkmark {
-	background-color: white;
+	background-color: var(--color-extrawhite);
 }
-
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */ 
 
-
-
-nav {
-	background-color: var(--color-yellow);
-	padding: 1px;	
+/* menu p */
+header p { 
+	font-family: 'Zilla Slab', serif;
+	font-size: 1em;
+	padding-top: 1em;
 }
 
-.logoswitch {
+/* open menu button */
+header > button {
+	padding-left: 40%;
+	padding-right: 60%; 
+	
+
+	background-color: var(--color-yellow);
+	border: none;
+	font-size: 1em;
+	padding-bottom: 1em;
+
+	display: flex;
+	
+}
+ /* menu 3 streepjes */
+header > button img {
+	width: 1.3em;
+	margin-top: 1.1em;
+	margin-right: .6em;
+	
+}
+
+
+header ul {
+	margin-top: 10em;
+	
+}
+
+header li {
+	padding:2em;
+	margin-left: -5em;
+	
+	
+}
+
+/* switch logo */
+header img:last-child {
 	position: absolute;
-	width: 6.6em;
+	width: 6.1em;
 	top: 0em;
 	right: 0em;
 	
 }
 
+/* sluit button */
+nav button > img {
+	/* width: 2.5em;
+	margin-right: 3em;
+	margin-bottom: 3em; */
 
-/****************/
-/* Section 1 Animal crossing */
-/****************/
-.page1 section:nth-of-type(1) {
-	margin-top: -2em;
-	margin-bottom: 20em;
-	margin-left: -10em;
-	position: relative;
+	margin-top: 3em;
+	left: 3em;
+	z-index: 5;
+
 	
 }
 
-.page1 .beginfoto {
-	position: absolute;	
-	width: 40em;
-	z-index: -1;
+/* animalcrossing logo */
+/* nav li img {
+	background-color: #008077;
+	margin-top: 4em;
+
+	left: 0;
+	z-index: 5;	
+
+} */
+
+
+/* Menu toggle */
+nav {
+	background-color: var(--color-yellow);
+
+	position: fixed;
+	top:0em;
+	left:0em;
+	bottom:0em;
+	right:0em;
+
+	text-align: center;
+
+	z-index: 5;
+
+	transform: translateX(100%);
+	transition: .3s;
+
+
+}
+
+
+
+nav a{
+	font-family: 'Zilla Slab', serif;
+	text-decoration: none;
+	font-size: 1.25em;
+	
 	
 }
 
-.page1 .logo {
-	position: absolute;	
-	width: 12em;
-	top:5em;
-	left: 17.5em;
+nav a:hover {
+	margin-left:1em ;
+	background-color: var(--color-extrawhite);
+	padding: .8em 1.5em .8em 1.5em;
+	border-radius: 1em;
+	text-decoration: underline;
+	transition: .2s;
+	
+	
+}
+
+nav a:active {
+	margin-left:1em ;
+	background-color: var(--color-brown);
+	color: var(--color-yellow);
+	padding: .8em 1.5em .8em 1.5em;
+	border-radius: 1em;
+	text-decoration: underline;
+	transition: .2s;
+	
+	
+}
+
+
+
+nav.toonmenu {
+	transform:translatex(0);
+	z-index: 3;
+	
+}
+
+
+
+
+
+
+
+
+/****************/
+/* Section 1 Animal crossing afbeelding */
+/****************/
+.page1 section:nth-of-type(1) ul {
+	display: grid;
+    grid-template-rows: repeat(3fr, 3);
+    grid-template-columns: repeat(3fr, 3);
+	
+}
+
+/* bg foto */
+.page1 section:nth-of-type(1) li:first-of-type {
+	grid-row: 1/4;
+	grid-column: 1/4;
+	
+}
+
+
+/* logo */
+.page1 section:nth-of-type(1) li:last-of-type {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+	grid-column: 2/3;
+	width: 11em;
+
 
 }
 
+.page1 section:nth-of-type(1) img {
+	width: 100%;
+	height: 100%;
+
+}
 
 
 /****************/
@@ -205,14 +359,19 @@ nav {
 /****************/
 
 .page1 section:nth-of-type(2) {
-	background-color: var(--color-brown);
+	background-image: url("../../images/bruin-stip.jpg");
+	background-size: 50em;
+	padding-bottom: 3em;
 	padding-top: 3em;
-	padding-bottom: 5em;
+	padding-left: 10%;
+	padding-right: 10%;
+	
 	
 }
 
 .page1 section:nth-of-type(2) h1 {
 	margin: -.5em 0em -.5em 0em;
+	
 }
 
 
@@ -220,6 +379,7 @@ nav {
 	color:var(--color-white);
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
+	
 	  
 }
 
@@ -232,15 +392,21 @@ nav {
 	margin-left: 1.5em;
 	margin-right: 1.5em;
 	border-radius: .5em;
+
+
 	  
 }
 
 .page1 section:nth-of-type(2) iframe {
-
-border: .3em solid white;
-box-shadow: 0px 0px 3px rgb(43, 26, 3);
+	border: .5em solid var(--color-extrawhite);
+	box-shadow: 0px 0px 10px rgba(59, 21, 0, 0.501);
 	
-
+	width: 80vw;
+    height: auto;
+	/* hoogte en breedte blijft hierbinnen */
+	aspect-ratio: 16/9; 
+	margin-bottom: 1.5em;
+	
 }
 
 
@@ -248,72 +414,88 @@ box-shadow: 0px 0px 3px rgb(43, 26, 3);
 /* Section 3 Dream getaway */
 /****************/
 .page1 section:nth-of-type(3) {
-position: relative;
-margin-bottom: 23em;
+	position: relative;
+	margin-top: 5%;
+	margin-bottom: 10%; 
+	
+	
+	/* wit/geel div blok */
+	margin-left: 2em;
+	margin-right: 2em;
+	background-color: var(--color-extrawhite);
+	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
+	border: .7em solid var(--color-yellow);
+	border-radius: 1em; 
+
+
+
 }
 
 .page1 section:nth-of-type(3) h2 {
-	margin-top: -3.5em ;
-	margin-bottom: 3em;
-	margin-left:2.3em;
-	margin-right:2.3em;
-	z-index: 1;
 
 	background-color: var(--color-blue);
+	margin-top: -3.5em;
 	padding: .7em;
+
+	z-index: 1;
 	
 }
 
-.page1 .nook {
-	position: absolute;
-	width: 8em;
+/* wasbeer foto */
+.page1 section:nth-of-type(3) img:first-of-type {
+	/* position: absolute; */
+	/* width: 8em;
 	left: 5em;
-	z-index: 2;
+	z-index: 2;  */
+	margin-top: 10%;
+	margin-left: 2em;
+	padding-bottom: 3em;
 
 }
 
-.page1 .spel {
-	position: absolute;
+/* spel foto */
+.page1 section:nth-of-type(3) img:last-of-type {
+	/* position: absolute;
 	width: 9em;
 	top:5em;
-	left: 12em;
-	z-index: 1;
+	left: 12em;	
+	z-index: 1; */
+
+	padding-bottom: 3em;
+	
 
 }
 
-
+/* ---- button link */
 .page1 section:nth-of-type(3) a {
+	display: flex;
+	justify-content: center;
+
 	background-color: var(--color-brown);
 	font-family: 'Zilla Slab', serif;
 	color: var(--color-white);
 	border-radius: 1em;
-	
-	left:8em;
-	top:22em;
-	padding-top: .8em;
-	padding-bottom: .8em;
-	padding-left: 2.5em;
-	padding-right: 2.5em;
-	margin: 1em;
+	box-shadow: 0px 2px 5px rgba(51, 22, 0, 0.557);
+
+	padding-top: 1em;
+	padding-bottom: 1em;
 	
 	z-index: 1;
-	
+
 }
 
-.page1 .buy-kaart {
+/* wit en geel blok */
+/* .page1 .buy-kaart {
 	position: absolute;
 
-	background-color: white;
-	border: .7em solid var(--color-yellow);
-	border-radius: 1em;
-
+	
 	padding: 10.5em;
-	/*lengte van blok*/
+	/*lengte van blok
 	padding-bottom: 7em;
 	top: 6em;
 	left: 2em;
 	z-index: -1;
-}
+} */
 
 /****************/
 /* Section 4  Island news */
@@ -323,92 +505,130 @@ margin-bottom: 23em;
 	background-image: url("../../images/hout.webp");
 	position:relative;
 	z-index: 1;
-	padding-bottom: 20em;
+	padding-bottom: 3em;
+
+	padding-left: 10%;
+	padding-right: 10%;
+
+
 }
 
 .page1 section:nth-of-type(4) h2{
 	color: var(--color-white);
-	margin-top: -3.5em ;
-	margin-bottom: 3em;
+	
 	margin-left:4em;
 	margin-right:4em;
 	z-index: 1;
 
 	background-color: var(--color-teal);
 	padding: .7em;
+
+
 	
 }
 
+/* Todays birthday */
 .page1 section:nth-of-type(4) h3{
 	color: var(--color-white);
 	font-size: 1.2em;
-	padding-top: 3em;
+	padding-top: 4em;
+	
 	
 }
 
+/* molly naam */
 .page1 section:nth-of-type(4) span{
 	color: var(--color-yellow);
 	font-size: 1.5em;
 	z-index: 1;
+
 	
 }
 
+/* molly plaatje */
 .page1 section:nth-of-type(4) img:first-of-type{
-	margin-left: 7em;
- 	width: 8em;
 	position: absolute;
+	margin-top: 7%;
+	margin-left: 6em;
+	padding-bottom: 3em;
+
+	width: 8em;
 	z-index: 1;
+
+
 }
 
+/* teal en geel blok */
 .page1 .verjaardag-kaart {
-	position: absolute;
 	background-image: url("../../images/pattern-leaves-green.jpeg");
 	border: .7em solid var(--color-yellow);
 	border-radius: 1em;
+	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
 
-	padding: 10.5em;
-	/*lengte van blok*/
-	padding-bottom: 13em;
-	top: 4em;
-	left: 2em;
+	margin-top: -6em;
+	margin-bottom: 3em;
+	position: relative;
+	padding: 10em;
+	padding-bottom: 12em;
 	z-index: -1;
 	
-}
+} 
 
 
 /****************/
 /* Section 5 Villager opinions */
 /****************/
 
+.page1 section:nth-of-type(5) {
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 13%;
+	
+
+}
+
 .page1 section:nth-of-type(5) h2{
 	font-size: 1.3em;
+	margin-bottom: 2em;
 } 
 
 /* verdeler img */ 
 .page1 section:nth-of-type(5) .verdeler{
-	width: 9em;
+	width: 15em;
 	background: 0em;
 	border: 0em;
+	margin-left: 3em;
 } 
 
-.page1 section:nth-of-type(5) ul{
-	margin-left: -1em;
-	text-align: left;
-	position: relative;
-	
+.page1 section:nth-of-type(5) li{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 2em;
+
 }
 
  /* ronde avatars */
- .page1 section:nth-of-type(5) img{
-	width: 3em;
-	border: .2em solid white;
+.page1 section:nth-of-type(5) img{
+	height: 4.5em;
+	width: 4.5em;
+	
+	border: .2em solid var(--color-extrawhite);
 	border-radius: 50%;
-	background-color: salmon;
+	background-color: rgb(253, 169, 109);
 	
 }
 
 .page1 section:nth-of-type(5) p{
 	text-align: left;
+	padding-left: 1em;
+	
+}
+
+ /* naam villager */
+ .page1 section:nth-of-type(5) span{
+	color:var(--color-brown);
+	font-family: 'Zilla Slab', serif;
 	
 }
 
@@ -420,9 +640,10 @@ margin-bottom: 23em;
 .page1 section:nth-of-type(6) {
 	background-image: url("../../images/bg-donker.png");
 	background-size: 35em;
-	padding-left: 4em;
-	padding-right: 4em;
-	padding-bottom: 8em;
+	padding: 6em;
+	
+	margin-top: 1em; 
+	
 	position: relative;
 	z-index: -1;
 } 
@@ -438,26 +659,28 @@ margin-bottom: 23em;
 }
 
 .page1 section:nth-of-type(6) h2{
-	margin-top: 5em;
+	margin-top: 2em;
+	margin-bottom: .5em;
 	font-size: 1.4em;
 	z-index: 1;
 
 }
 
-
-
+/* button link */
 .page1 section:nth-of-type(6) a {
 	display: flex;
 	justify-content: center;
-	margin-left: 5.5em;
 
 	background-color: var(--color-brown);
 	font-family: 'Zilla Slab', serif;
 	color: var(--color-white);
 	border-radius: 1em;
+	box-shadow: 0px 2px 5px rgba(51, 22, 0, 0.557);
 
-	padding-top: .7em;
-	padding-bottom: .7em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	/* margin-left: 3em; */
+	
 	z-index: 1;
 
 }
@@ -465,6 +688,7 @@ margin-bottom: 23em;
 .page1 section:nth-of-type(6) figure {
 	position: relative;
 	margin-bottom: 4em;
+	margin-top: 2em;
 }
 
 .boom {
@@ -494,12 +718,14 @@ margin-bottom: 23em;
 
 }
 
+/* wit en geel blok */
 .page1 .create-kaart {
 	position: absolute;
 
-	background-color: white;
+	background-color: var(--color-extrawhite);
 	border: .7em solid var(--color-yellow);
 	border-radius: 1em;
+	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
 
 	padding: 10.5em;
 	/*lengte van blok*/
@@ -527,16 +753,24 @@ padding-bottom: 8em;
 }
 
 
-footer figure {
-	margin-left: 8em;
-	margin-top: 2em;
+
+footer p {
+	font-size: .7em;
 	margin-bottom: 2em;
 	
-
 }
 
-footer p, a {
-	font-size: .7em;
+footer a:first-of-type{
+	background-image: url("../../images/bubble-border.svg");
+	background-repeat: no-repeat;
+	font-size: 1.1em;
+	padding-top: 1.1em;
+	margin-bottom: 1.5em;
+	
+}
+
+footer h3{
+	margin-bottom: 1em;
 	
 }
 
@@ -553,52 +787,47 @@ footer li img {
 }
 
 footer a {
-
 	display:flex;
 	justify-content: center;
 	padding: 1em;
 }
 
-strong { font-weight: bold; }
-
-
-/****************/
-/* Section 1 Animal crossing */
-/****************/
 .page2 video {
 	margin-left: -10em;
 	margin-top: -2em;
 	width: 40em;
-	
-}
-
-.page2 section:nth-of-type(1) {
 	position: relative;
-	
+	z-index: -1;
 	
 }
 
-
-.page2 section:nth-of-type(1) img {
-	position: absolute;
-	bottom: 3.5em;
-	left: 9.5em;
-	width: 7em;
+/****************/
+/* Section 1 Animal crossing */
+/****************/
+.page2 section:nth-of-type(1) { 
+	background-color: var(--color-white);
+	
 }
 
 .page2 section:nth-of-type(1) h2 {
-	position: absolute;
-	bottom: 0em;
-	left: 4.5em;
 	background-color: var(--color-white);
-	padding: 1.2em;
-	padding-top: 1.3em;
-	padding-left: 4em;
-	padding-right: 4em;
-	
-	
+	font-size: 1.3em;
+
+	padding: 1em;
+
+	/* margin-top: -2em;
+	margin-left: 2em;
+	margin-right: 2em; */
+
+
 }
 
+.page2 section:nth-of-type(1) img  {
+	position: absolute;
+	left: 30%;
+	top: 20.5em;
+	width: 40%;
+}
 
 
 /****************/
@@ -606,17 +835,194 @@ strong { font-weight: bold; }
 /****************/
 
 .page2 section:nth-of-type(2) { 
-	background-color: white;
-	margin-top: -2.2em;
-	margin-bottom: 2em;
+	background-color: var(--color-extrawhite);
+	margin-top: 2;
+	padding-bottom: 4em;
+	padding-left: 2em;
+	padding-right: 2em;
+
 }
 
-.page2 section:nth-of-type(2) h2 { 
-	font-size: 1.3em;
+.page2 section:nth-of-type(2) h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+
 }
 
 .page2 section:nth-of-type(2) img { 
-	width: 15em;
-	margin-left: 3.5em;
-	margin-top: 1.5em;
+	width: 18em;
+	margin-left: 2.3em;
+	margin-top: 2em;
+	margin-bottom: 2em; 
+
+	position: relative;
+	/* left: 30%;
+	top: 20.5em; */
+} 
+
+/****************/
+/* Section 3 Home sweet tent */
+/****************/
+
+.page2 section:nth-of-type(3) { 
+	background-image: url("../../images/bg-donker.png");
+	background-size: 50em;
+	position: relative;
+	z-index: -1;
+
+	padding-top: 3em;
+	padding-left: 3.5em;
+	padding-right: 3em;
+	
 }
+
+.page2 section:nth-of-type(3) h2 { 
+	font-size: 1.5em;
+	z-index: 1;
+
+	padding-top: 2em;
+	padding-bottom: .5em;
+}
+
+.page2 section:nth-of-type(3) p { 
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+/* wit en geel blok */
+.page2 .home-kaart {
+	position: absolute;
+
+	background-color: var(--color-extrawhite);
+	border: .7em solid var(--color-yellow);
+	border-radius: 1em;
+	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
+
+	padding: 10.5em;
+	/*lengte van blok*/
+	padding-bottom: 3em;
+	top: 3em;
+	left: 2em;
+	z-index: -1;
+}
+
+.page2 section:nth-of-type(3) article { 
+	margin-top: 8em;
+	position: relative;
+
+}
+
+.page2 section:nth-of-type(3) article p { 
+	background-color: var(--color-yellow);
+	border-radius: 1.8em;
+	box-shadow: 0px 0px 10px rgba(59, 21, 0, 0.501);
+	padding: 1.2em;
+	padding-left: 4em;
+	padding-right: 4em;
+
+	position: absolute;
+	top:-1em;
+	left: 5em;
+	
+}
+
+.page2 section:nth-of-type(3) article img { 
+	border: .5em solid var(--color-extrawhite);
+	box-shadow: 0px 0px 10px rgba(59, 21, 0, 0.501);
+
+	width: 22.3em;
+	margin-top: 1.5em;
+	z-index: -1;
+	
+}
+
+.page2 section:nth-of-type(3) img { 
+	position: relative;
+	
+}
+
+.tent-persoon {
+	width: 20em;
+	position: absolute;
+	top: -1.8em;
+	left: 1.5em;
+
+}
+
+
+/****************/
+/* Section 4 Step by step crafting */
+/****************/
+
+.page2 section:nth-of-type(4) {
+	background-image: url("../../images/ruit.jpg");
+	background-size: 45em;
+	
+
+	margin-top: -1em;
+	padding-top: 1em;
+
+}
+
+
+.page2 section:nth-of-type(4) h2 {
+	margin-top: -5.5em ;
+	margin-bottom: 3em;
+	margin-left:2.3em;
+	margin-right:2.3em;
+	z-index: 1;
+
+	background-color: var(--color-blue);
+	padding: .8em;
+	
+}
+
+.page2 section:nth-of-type(4) p:first-of-type{
+	font-size: 2em;
+	font-family: 'Libre Franklin', sans-serif;
+	background-color: var(--color-extrawhite);
+	border-radius: 5em;
+	border: .25em solid rgba(241,226,111,0.8);
+
+	/* grootte van het rondje */
+	margin-left: 3.1em;
+	margin-right: 3.1em;
+	padding-bottom: .2em;
+
+	/* plaatsing van het rondje */
+	margin-top: -2em;
+	margin-bottom: 2em;
+
+	
+}
+
+
+.page2 section:nth-of-type(4) img {
+	margin-left: 3em;
+
+}
+
+.page2 section:nth-of-type(4) ul:nth-of-type(1) li {
+	background-color: var(--color-green);
+	box-shadow: 0px 0px 10px rgba(0, 59, 46, 0.501);
+	border-radius: .5em;
+
+	margin-top: 4em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 3em;
+
+	padding: 2em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
