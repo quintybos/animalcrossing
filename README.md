@@ -149,29 +149,16 @@ s
   
   <img src="readme-images/week2-2.png" width="375px" alt="">
 
-  Vragen om te stellen:
+  ### Vragen om te stellen:
   - Hoe is mijn gebruik van classes en divs? Is dit de juiste manier? Hoe zou dit beter kunnen?
   - Heb ik position te vaak gebruikt? Is dit de juiste manier? Hoe zou dit beter kunnen?
   - Ik heb veel margin en padding veranderingen gebruikt om te positioneren, is dit handig? Hoe zou dit beter kunnen?
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Het gebruik van veel margins/paddings was niet erg
+  - Hetzelfde geld voor classes divs en position
 
 </details>
 
@@ -185,10 +172,29 @@ s
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Dit ging goed: 
+  - Animatie/menu opdrachten waren leuk en redelijk makkelijk om te maken.
+  - Position absolute gebruiken om plaatjes over elkaar heen te zetten voor dit onderdeel:
+  <img src="readme-images/week3-goed.png" width="375px" alt="">  
+
+  Dit was lastig:
+  - Het mobiel responsive maken liep ik heel erg bij vast waardoor ik veel tijd moest besteden aan het verandere (vooral inkorten) van de css. Het had teveel position gebruikt waardoor de content te straks was gepositioneerd. Dit was moeilijk om weer losjes te krijgen. 
+
+  - Plaatjes centreren was lastig
+  <img src="readme-images/week3-slecht.png" width="375px" alt=""> 
+
+ ### Vragen om te stellen:
+Hoofd Vragen:
+- Hulp met het ‘telefoon responsive’ krijgen van de afbeeldingen.
+- Gebruik ik goede elementen en benamingen? Teveel position of margins/paddings? Is flexbox makkelijker?
+- Menu plaatjes het krijg ik ze op z’n plek?
+
+Meer bijzaken:
+- Hoe maak ik een img carrousel?
+- Hoe maak ik de header sticky?
 
 
-  ### Agenda voor meeting
+### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
