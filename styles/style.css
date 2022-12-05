@@ -428,7 +428,7 @@ header {
 
 	color: var(--color-extrawhite);
 	font-family: 'Zilla Slab', serif;
-	background-image: url("../../images/groen-stip.jpg");
+	background-image: url("./../images/groen-stip.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -1076,7 +1076,7 @@ transition: .5s;
 
 footer {
 	background-color: #f8eebc;
-	background-image: url("../../images/footer-illustration.svg");
+	background-image: url("./../images/footer-illustration.svg");
 	background-position: 50% 100.5%;
 	background-repeat: repeat-x;
 	background-size: auto 110px;
@@ -1095,7 +1095,7 @@ footer p {
 }
 
 footer a:first-of-type{
-	background-image: url("../../images/bubble-border.svg");
+	background-image: url("./../images/bubble-border.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 
