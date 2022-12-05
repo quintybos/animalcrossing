@@ -14,8 +14,6 @@ button, summary {
 }
 
 
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -28,21 +26,298 @@ button, summary {
 	--color-white: rgb(248, 242, 218);
 	--color-extrawhite: white;
 
-	background-size: 55em;
-	background-image: url("./../images/bg-licht.jpeg");
+	/* background-size: 55em; */
+
 	
 }
 
 
+.page2 { background-image: url("./../images/bg-donker.png");
+background-size: 40em;}
+
+
 /****************/
-/* Algemene Tekst/lijsten/fotos */
+/* -- ANIMATIES -- */
+/****************/
+
+/* Background bewegend */
+
+@media (prefers-reduced-motion: no-preference) { 
+	@keyframes background-animation {
+		0% {background-position: 0 0;}
+		100% {background-position: 180px 180px;}
+	
+}
+
+.page1 #background-animation {
+	background-image: url("./../images/bg-licht.jpeg");
+	background-repeat: repeat;
+
+	width: 100vw;
+  	height: 40rem;
+	animation: linear;
+
+	z-index: -20;
+
+	animation-name: background-animation;
+	animation-duration: 20s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+
+}
+}
+
+/* Fade in van Right met EDIT */
+
+@media (prefers-reduced-motion: no-preference) { 
+	@keyframes FadeInR {
+		0% {
+			transform: translateX(100);
+			transform: translateY(0);
+			opacity: 0%;
+		}
+
+		35% {
+			opacity: 50%;
+			transform: translateX(110%);
+		}
+		
+		50% {
+			transform: translateX(95%);
+		}
+
+	
+		100% {
+			transform: translateX(90%);
+		}
+}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.FadeInR-animation {
+		animation: FadeInR 1s 1;
+		animation-timing-function: ease-in-out;
+	}
+}
+
+/* Fade in van Left met EDIT */
+
+@media (prefers-reduced-motion: no-preference) { 
+	@keyframes FadeInL {
+		0% {
+			transform: translateX(100);
+			transform: translateY(0);
+			opacity: 0%;
+		}
+
+		35% {
+			opacity: 50%;
+			transform: translateX(-110%);
+		}
+		
+		50% {
+			transform: translateX(-95%);
+		}
+
+	
+		100% {
+			transform: translateX(-90%);
+		}
+}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.FadeInL-animation {
+		animation: FadeInL 1s 1;
+		animation-timing-function: ease-in-out;
+	}
+}
+
+/* Slide in van Bottom */
+
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes SlideInB {
+		0% {
+			transform: scale(0%);
+			transform: translateY(100%);
+			opacity: 0%;
+		}
+
+		20% {
+			transform: scale(0%);
+			transform: translateY(100%);
+			opacity: 10%;
+		}
+
+		65% {
+			transform: scale(100%);
+		}
+
+		70% {
+			transform: scale(115%);			
+		}
+
+		80% {
+			transform: scale(100%);			
+		}
+
+		100% {
+			
+		}
+
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.SlideInB {
+		animation: SlideInB 1.5s 1;
+		animation-timing-function: cubic-bezier(.5, 0, .5, 1.5);
+		animation-delay: 1s;
+	
+
+	}
+}
+
+
+
+/* Small to big pop */
+
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes SmallBig {
+		0% {
+			transform: scale(0%);
+			transform: translateY(0%);
+			opacity: 0%;
+		}
+
+		20% {
+			transform: scale(0%);
+			transform: translateY(0%);
+			opacity: 0;
+		}
+
+		60% {
+			transform: scale(0%);
+			opacity: 0;
+		}
+
+		80% {
+			transform: scale(80%);
+			
+		}
+
+		90% {
+			transform: scale(110%);
+			
+		}
+
+		100% {
+		}
+
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.SmallBig, .SmallBig2, .SmallBig3  {
+		animation: SmallBig 1.5s 1;
+		animation-timing-function: cubic-bezier(.5, 0, .5, 1.5);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.SmallBig2 {
+		animation-delay: .5s;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.SmallBig3 {
+		animation-delay: .8s;
+	}
+}
+
+
+
+
+/* Fade in Left NORMAL */
+
+@media (prefers-reduced-motion: no-preference) { 
+	@keyframes FadeInLNOR {
+		0% {
+			transform: translateX(0);
+			transform: translateY(0);
+			opacity: 0%;
+		}
+
+		35% {
+			opacity: 50%;
+			transform: translateX(-20%);
+		}
+		
+		50% {
+			transform: translateX(-5%);
+		}
+
+	
+		100% {
+			transform: translateX(0);
+		}
+}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.FadeInLNOR, .boom, .knutsel {
+		animation: FadeInLNOR 1s 1;
+		animation-timing-function: ease-in-out;
+	}
+}
+@media (prefers-reduced-motion: no-preference) {
+	.knutsel{
+		animation-delay: .2s;
+	}
+}
+
+/* Fade in Right NORMAL */
+
+@media (prefers-reduced-motion: no-preference) { 
+	@keyframes FadeInRNOR {
+		0% {
+			transform: translateX(0);
+			transform: translateY(0);
+			opacity: 0%;
+		}
+
+		35% {
+			opacity: 50%;
+			transform: translateX(20%);
+		}
+		
+		50% {
+			transform: translateX(5%);
+		}
+
+	
+		100% {
+			transform: translateX(0);
+		}
+}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.FadeInRNOR, .tent {
+		animation: FadeInRNOR 1.3s 1;
+		animation-timing-function: ease-in-out;
+	}
+}
+
+
+
+
+/****************/
+/* Algemene Styling */
 /****************/
 
 body {
-	/* margin-top: -.1em;
-	margin-left: -.1em;
-	margin-right: -.1em;
-	margin-bottom: -.1em; */
 	width: 100vw;
 	
 }
@@ -58,7 +333,6 @@ h2 {
 	color:var(--color-brown);
 	font-family: 'Zilla Slab', serif;
 	font-size: 1em;
-	font-weight: 700;
 	text-align: center;
 
 }
@@ -91,11 +365,38 @@ p {
 a {
 	color:var(--color-brown);
 	font-family: 'Libre Franklin', sans-serif;
-	font-size: small;
-	
+	transition-duration: 0.2s;
 
 }
 
+a:hover {
+	/* background-color: var(--color-yellow);
+	color: var(--color-brown); */
+
+	border: 9px solid var(--color-yellow);
+	text-decoration: underline;
+	transition-duration: 0.5s;
+	border-radius: 1em;
+
+}
+
+a:focus-visible {
+	outline: 3px solid var(--color-teal);
+	border-width: 5rem;				
+}
+
+section a {
+	position: relative;
+	padding: 0.5em;
+	margin-top: 2em;
+	text-align: center;
+	text-decoration: none;
+
+	background-color: var(--color-brown);
+	color: var(--color-white);
+	border-radius: 1em;
+
+}
 
 ul {
 	/* margin:0;
@@ -104,33 +405,14 @@ ul {
 }
 
 
-/****************/
-/* Section styling */
-/****************/
-
-/* section {
-	/* padding: 2em; */
-	
-
-section a {
-	position: relative;
-	padding: 0.5em;
-	margin-top: 2em;
-
-	/* width: 50%; */
-
-	text-align: center;
-	text-decoration: none;
-
-	
-}
 
 /****************/
 /* HEADER */
 /****************/
 header {
 	position: sticky;
-	z-index: 1;	
+	top: 0;
+	z-index: 10;	
 	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
 	
 }
@@ -184,9 +466,9 @@ header p {
 
 /* open menu button */
 header > button {
-	padding-left: 40%;
-	padding-right: 60%; 
-	
+	padding-left: 65%;
+	padding-right: 30%; 
+	margin-left: -6em;
 
 	background-color: var(--color-yellow);
 	border: none;
@@ -212,13 +494,12 @@ header ul {
 
 header li {
 	padding:2em;
-	margin-left: -5em;
 	
 	
 }
 
 /* switch logo */
-header img:last-child {
+header > img:last-child {
 	position: absolute;
 	width: 6.1em;
 	top: 0em;
@@ -227,27 +508,35 @@ header img:last-child {
 }
 
 /* sluit button */
-nav button > img {
-	/* width: 2.5em;
-	margin-right: 3em;
-	margin-bottom: 3em; */
-
-	margin-top: 3em;
-	left: 3em;
-	z-index: 5;
-
+nav button {
+	width: 5em;
 	
+	background-color: transparent;
+	border: transparent;
+	padding: 1em;
+
+	margin-top: 2.5em;
+	margin-left: 2.5em;
+
+	display: flex;
+	align-items: left;
+
+	z-index: 5; 
+	
+
 }
 
-/* animalcrossing logo */
-/* nav li img {
-	background-color: #008077;
-	margin-top: 4em;
+/* ac logo in nav */
+nav ul img:last-of-type {
+	width: 13rem;
+	margin-top: -2rem;
 
-	left: 0;
-	z-index: 5;	
+}
 
-} */
+nav ul {
+	margin-top: -1em;
+
+}
 
 
 /* Menu toggle */
@@ -264,7 +553,7 @@ nav {
 
 	z-index: 5;
 
-	transform: translateX(100%);
+	transform: translateY(-120%);
 	transition: .3s;
 
 
@@ -276,27 +565,20 @@ nav a{
 	font-family: 'Zilla Slab', serif;
 	text-decoration: none;
 	font-size: 1.25em;
-	
+
+	background-color: var(--color-extrawhite);
+	padding: .8em 1.5em .8em 1.5em;
+	border-radius: 1em;
+	box-shadow: 0px 0px 5px rgba(70, 31, 1, 0.425);
 	
 }
 
 nav a:hover {
-	margin-left:1em ;
-	background-color: var(--color-extrawhite);
-	padding: .8em 1.5em .8em 1.5em;
-	border-radius: 1em;
-	text-decoration: underline;
-	transition: .2s;
-	
-	
-}
-
-nav a:active {
-	margin-left:1em ;
+	margin-left: 1em;
 	background-color: var(--color-brown);
 	color: var(--color-yellow);
-	padding: .8em 1.5em .8em 1.5em;
 	border-radius: 1em;
+	
 	text-decoration: underline;
 	transition: .2s;
 	
@@ -306,7 +588,7 @@ nav a:active {
 
 
 nav.toonmenu {
-	transform:translatex(0);
+	transform:translateY(0);
 	z-index: 3;
 	
 }
@@ -359,7 +641,7 @@ nav.toonmenu {
 /****************/
 
 .page1 section:nth-of-type(2) {
-	background-image: url("../../images/bruin-stip.jpg");
+	background-image: url("./../images/bruin-stip.jpg");
 	background-size: 50em;
 	padding-bottom: 3em;
 	padding-top: 3em;
@@ -409,129 +691,168 @@ nav.toonmenu {
 	
 }
 
+/****************/
+/* Section 3 Dream getaway buy now! */
+/****************/
 
-/****************/
-/* Section 3 Dream getaway */
-/****************/
+
 .page1 section:nth-of-type(3) {
-	position: relative;
-	margin-top: 5%;
-	margin-bottom: 10%; 
-	
-	
-	/* wit/geel div blok */
-	margin-left: 2em;
-	margin-right: 2em;
+
 	background-color: var(--color-extrawhite);
 	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
 	border: .7em solid var(--color-yellow);
 	border-radius: 1em; 
-
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 3rem;
+	margin-bottom: 7em;
+	margin-top: 7em;
 
 }
 
 .page1 section:nth-of-type(3) h2 {
-
 	background-color: var(--color-blue);
-	margin-top: -3.5em;
-	padding: .7em;
+	border-radius: .5em;
+	margin-top: -9em;
+	margin-bottom: 2em;
 
-	z-index: 1;
+	padding:1rem 2rem 1rem 2rem;
+
+	z-index: 0;
 	
 }
 
-/* wasbeer foto */
-.page1 section:nth-of-type(3) img:first-of-type {
-	/* position: absolute; */
-	/* width: 8em;
-	left: 5em;
-	z-index: 2;  */
-	margin-top: 10%;
-	margin-left: 2em;
-	padding-bottom: 3em;
-
-}
-
-/* spel foto */
-.page1 section:nth-of-type(3) img:last-of-type {
-	/* position: absolute;
-	width: 9em;
-	top:5em;
-	left: 12em;	
-	z-index: 1; */
-
-	padding-bottom: 3em;
-	
-
-}
-
-/* ---- button link */
-.page1 section:nth-of-type(3) a {
+.page1 section:nth-of-type(3) > figure {
 	display: flex;
-	justify-content: center;
+	margin-top: -20%;
+	min-width: 2rem;
 
-	background-color: var(--color-brown);
+
+}
+
+/* Object fit contain zodat de afbeeldingen niet stretchen. 
+Object position bottom zodat ze aan de onderkant van het object staan */
+.page1 section:nth-of-type(3) > figure > img {
+	margin-top: 4em;
+	width: 50%;
+	object-fit: contain;
+	object-position: bottom;
+
+}
+
+/* over elkaar heen zetten nook en spel */
+.page1 section:nth-of-type(3) > figure > img:first-of-type {
+	transform: translateX(90%);
+
+}
+
+.page1 section:nth-of-type(3) > figure > img:last-of-type {
+	transform: translateX(-90%);
+
+}
+
+/* buy now */
+.page1 section:nth-of-type(3) a {
 	font-family: 'Zilla Slab', serif;
-	color: var(--color-white);
-	border-radius: 1em;
 	box-shadow: 0px 2px 5px rgba(51, 22, 0, 0.557);
 
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding: 1rem 3rem;
+	margin: 3rem 0 2rem 0;
 	
-	z-index: 1;
-
 }
 
-/* wit en geel blok */
-/* .page1 .buy-kaart {
-	position: absolute;
 
-	
-	padding: 10.5em;
-	/*lengte van blok
-	padding-bottom: 7em;
-	top: 6em;
-	left: 2em;
-	z-index: -1;
-} */
+
 
 /****************/
 /* Section 4  Island news */
 /****************/
 
 .page1 section:nth-of-type(4) {
-	background-image: url("../../images/hout.webp");
-	position:relative;
-	z-index: 1;
-	padding-bottom: 3em;
+	margin: 0;
+	padding-bottom: 2rem
 
-	padding-left: 10%;
-	padding-right: 10%;
+}
+
+.page1 section:nth-of-type(4) article  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 
 
 }
 
+/* container van de section */
+.page1 section:nth-of-type(4) article > ul {
+	width: 100%;
+	background-image: url("./../images/hout.webp");
+	margin-top: -3.5rem;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	padding: 5rem 2rem 5rem 2rem;
+	
+
+	z-index: -1;
+
+}
+
+/* het blauwe blokje */
+.page1 section:nth-of-type(4) article > ul >li, article > section {
+	background-image: url("./../images/pattern-leaves-green.jpeg");
+	border: .7em solid var(--color-yellow);
+	border-radius: 1em;
+	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
+	
+	padding-left: 10em;
+	padding-right: 10em;
+	padding-bottom: 2em;
+	/* padding: 5rem; */
+	max-width: 18.75rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+/* molly img */
+.page1 section:nth-of-type(4) img:hover {
+background-color: #6b5c43;	
+transition: .5s;
+
+}
+
+
+/* news */
 .page1 section:nth-of-type(4) h2{
 	color: var(--color-white);
+	background-color: var(--color-teal); 
+	border-radius: .5em;
 	
-	margin-left:4em;
-	margin-right:4em;
+	margin-top: -1.5em;
+	margin-bottom: 2em;
+	padding: 1em;
+
 	z-index: 1;
+	padding:1rem 3rem 1rem 3rem;
 
-	background-color: var(--color-teal);
-	padding: .7em;
-
-
+	margin-left: 4em;
+	margin-right: 4em;
 	
+
 }
 
 /* Todays birthday */
 .page1 section:nth-of-type(4) h3{
 	color: var(--color-white);
 	font-size: 1.2em;
-	padding-top: 4em;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
 	
 	
 }
@@ -544,35 +865,6 @@ nav.toonmenu {
 
 	
 }
-
-/* molly plaatje */
-.page1 section:nth-of-type(4) img:first-of-type{
-	position: absolute;
-	margin-top: 7%;
-	margin-left: 6em;
-	padding-bottom: 3em;
-
-	width: 8em;
-	z-index: 1;
-
-
-}
-
-/* teal en geel blok */
-.page1 .verjaardag-kaart {
-	background-image: url("../../images/pattern-leaves-green.jpeg");
-	border: .7em solid var(--color-yellow);
-	border-radius: 1em;
-	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
-
-	margin-top: -6em;
-	margin-bottom: 3em;
-	position: relative;
-	padding: 10em;
-	padding-bottom: 12em;
-	z-index: -1;
-	
-} 
 
 
 /****************/
@@ -599,6 +891,13 @@ nav.toonmenu {
 	border: 0em;
 	margin-left: 3em;
 } 
+
+
+.page1 section:nth-of-type(5) img:hover {
+	margin-bottom: 1.5em;
+	transition: .5s;
+
+}
 
 .page1 section:nth-of-type(5) li{
 	display: flex;
@@ -636,33 +935,92 @@ nav.toonmenu {
 /* Section 6 CREATE */
 /****************/
 
-/* verdeler img */ 
 .page1 section:nth-of-type(6) {
-	background-image: url("../../images/bg-donker.png");
+	background-image: url("./../images/bg-donker.png");
 	background-size: 35em;
-	padding: 6em;
-	
-	margin-top: 1em; 
-	
+	padding-top: 8rem;
+	padding-bottom: 6rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	position: relative;
 	z-index: -1;
+
 } 
 
-.page1 .bloem-icon {
-	width: 2.2em;
+.page1 section:nth-of-type(6) article  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-	position: absolute;
-	top:5em;
-	left: 12em;
+	margin-left: -3rem;
+	margin-right: -3rem;
+
+}
+
+/* container van de section */
+.page1 section:nth-of-type(6) article > ul {
+	margin-top: -7rem;
+	margin-left: -7rem;
+	margin-right: -7rem;
+	margin-bottom: -8em;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	padding: 5rem;
+	
+
+	z-index: -1;
+
+}
+
+/* het witte blokje */
+.page1 section:nth-of-type(6) article > ul >li, article > section {
+	background-color: var(--color-extrawhite);
+	border: .7em solid var(--color-yellow);
+	border-radius: 1em;
+	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
+	
+	padding: 2rem 3rem 2rem 3rem;
+	max-width: 18.75rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+
+/* bloem icon */
+.page1 section:nth-of-type(6) > img {
+	width: 2.2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 
 	z-index: 1;
 }
 
 .page1 section:nth-of-type(6) h2{
-	margin-top: 2em;
+	margin-top: 1em;
+	margin-left: -2rem;
+	margin-right: -2rem;
 	margin-bottom: .5em;
 	font-size: 1.4em;
-	z-index: 1;
+
+
+}
+
+.page1 section:nth-of-type(6) p{
+	margin-top: 1em;
+	margin-left: -2rem;
+	margin-right: -2rem;
+	margin-bottom: .5em;
 
 }
 
@@ -670,25 +1028,18 @@ nav.toonmenu {
 .page1 section:nth-of-type(6) a {
 	display: flex;
 	justify-content: center;
-
-	background-color: var(--color-brown);
 	font-family: 'Zilla Slab', serif;
-	color: var(--color-white);
-	border-radius: 1em;
 	box-shadow: 0px 2px 5px rgba(51, 22, 0, 0.557);
-
-	padding-top: 1em;
-	padding-bottom: 1em;
-	/* margin-left: 3em; */
+	padding: 1rem 3rem;
 	
-	z-index: 1;
-
 }
 
+/* samengestelde afbeelding */
 .page1 section:nth-of-type(6) figure {
 	position: relative;
 	margin-bottom: 4em;
 	margin-top: 2em;
+	padding-bottom: 3rem;
 }
 
 .boom {
@@ -718,37 +1069,20 @@ nav.toonmenu {
 
 }
 
-/* wit en geel blok */
-.page1 .create-kaart {
-	position: absolute;
-
-	background-color: var(--color-extrawhite);
-	border: .7em solid var(--color-yellow);
-	border-radius: 1em;
-	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
-
-	padding: 10.5em;
-	/*lengte van blok*/
-	padding-bottom: 8em;
-	top: 3em;
-	left: 2em;
-	z-index: -1;
-}
-
 
 /****************/
 /* Footer */
 /****************/
 
 footer {
-background-color: #f8eebc;
-background-image: url("../../images/footer-illustration.svg");
-background-position: 50% 100.5%;
-background-repeat: repeat-x;
-background-size: auto 110px;
+	background-color: #f8eebc;
+	background-image: url("../../images/footer-illustration.svg");
+	background-position: 50% 100.5%;
+	background-repeat: repeat-x;
+	background-size: auto 110px;
 
-padding: 2em;
-padding-bottom: 8em;
+	padding: 2em;
+	padding-bottom: 8em;
 
 }
 
@@ -763,10 +1097,13 @@ footer p {
 footer a:first-of-type{
 	background-image: url("../../images/bubble-border.svg");
 	background-repeat: no-repeat;
+	background-position: center;
+
 	font-size: 1.1em;
 	padding-top: 1.1em;
 	margin-bottom: 1.5em;
 	
+
 }
 
 footer h3{
@@ -783,20 +1120,49 @@ footer ul {
 
 footer li img {
 	width: 3em;
-
+	
 }
 
 footer a {
 	display:flex;
 	justify-content: center;
 	padding: 1em;
+	text-decoration: none;
+	transition:.5s;
+	
+}
+
+footer a:hover {
+	background-color: var(--color-yellow);
+	margin-left: 5em;
+	margin-right: 5em;
+	padding: .5em;
+	
+	
+}
+  
+  /* active */
+  footer a:active {
+	color:var(--color-teal);
+	background-color: var(--color-green);
+	margin-left: 5em;
+	margin-right: 5em;
+	padding: 1em;
+}
+
+
+.page2 body{
+	background-image: url("./../images/bg-donker.png");
 }
 
 .page2 video {
-	margin-left: -10em;
-	margin-top: -2em;
-	width: 40em;
-	position: relative;
+	width: 100vw;
+    height: auto;
+	/* hoogte en breedte blijft hierbinnen */
+	aspect-ratio: 16/10; 
+
+	margin-bottom: -1em;
+	margin-top: -1em;
 	z-index: -1;
 	
 }
@@ -804,29 +1170,13 @@ footer a {
 /****************/
 /* Section 1 Animal crossing */
 /****************/
-.page2 section:nth-of-type(1) { 
-	background-color: var(--color-white);
-	
-}
-
-.page2 section:nth-of-type(1) h2 {
-	background-color: var(--color-white);
-	font-size: 1.3em;
-
-	padding: 1em;
-
-	/* margin-top: -2em;
-	margin-left: 2em;
-	margin-right: 2em; */
-
-
-}
 
 .page2 section:nth-of-type(1) img  {
 	position: absolute;
-	left: 30%;
-	top: 20.5em;
-	width: 40%;
+	left: 34%;
+	top: 15rem;
+	width: 32%;
+	z-index: 1;
 }
 
 
@@ -841,23 +1191,40 @@ footer a {
 	padding-left: 2em;
 	padding-right: 2em;
 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
+/* create getaway */
 .page2 section:nth-of-type(2) h2 {
-	font-size: 1.5em;
-	margin-bottom: 1em;
+	background-color: var(--color-white);
+	font-size: 1.3em;
+	padding: 1rem 3rem 1rem 3rem;
+	/* margin-left: 3em;
+	margin-right: 3em; */
+
+	border-radius: .5rem;
+	box-shadow: 0px 2px 5px rgba(51, 22, 0, 0.557);
+	margin-top: -.5em;
+	margin-bottom: .5em;
 
 }
 
+.page2 section:nth-of-type(2) h3 {
+	padding-bottom: 1em;
+	font-size: 1.3em;
+}
+
+/* verdeler met driehoekjes */
 .page2 section:nth-of-type(2) img { 
-	width: 18em;
-	margin-left: 2.3em;
+	width: 100vw;
 	margin-top: 2em;
 	margin-bottom: 2em; 
+	padding-left: 3em;
+	padding-right: 3em; 
 
-	position: relative;
-	/* left: 30%;
-	top: 20.5em; */
 } 
 
 /****************/
@@ -865,156 +1232,260 @@ footer a {
 /****************/
 
 .page2 section:nth-of-type(3) { 
-	background-image: url("../../images/bg-donker.png");
-	background-size: 50em;
-	position: relative;
+	/* position: relative;
 	z-index: -1;
-
 	padding-top: 3em;
 	padding-left: 3.5em;
-	padding-right: 3em;
-	
-}
-
-.page2 section:nth-of-type(3) h2 { 
-	font-size: 1.5em;
-	z-index: 1;
-
-	padding-top: 2em;
-	padding-bottom: .5em;
-}
-
-.page2 section:nth-of-type(3) p { 
-	padding-left: 2em;
-	padding-right: 2em;
-}
-
-/* wit en geel blok */
-.page2 .home-kaart {
-	position: absolute;
+	padding-right: 3em;*/
+	/* padding-bottom: 1rem;  */
 
 	background-color: var(--color-extrawhite);
 	border: .7em solid var(--color-yellow);
 	border-radius: 1em;
 	box-shadow: 0px 0px 15px rgba(51, 22, 0, 0.29);
 
-	padding: 10.5em;
-	/*lengte van blok*/
-	padding-bottom: 3em;
-	top: 3em;
-	left: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 2rem;
+	/* max-width: 18.75rem; */
+
+	padding: 1em;
+	
+
+}
+
+.page2 section:nth-of-type(3) h2 { 
+	font-size: 1.5em;
+	padding-top: .5em;
+	padding-bottom: 1em;
+}
+
+.page2 section:nth-of-type(3) p { 
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 1.5em;
+}
+
+/****************/
+/* Section 4 On the beach?? */
+/****************/
+
+
+.page2 section:nth-of-type(4) { 
+	/* position: relative;
 	z-index: -1;
+	padding-top: 3em;
+	padding-left: 3.5em;
+	padding-right: 3em;
+	padding-bottom: 3em; */
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 3rem;
+
+	
 }
 
-.page2 section:nth-of-type(3) article { 
-	margin-top: 8em;
-	position: relative;
-
-}
-
-.page2 section:nth-of-type(3) article p { 
+.page2 section:nth-of-type(4) p { 
 	background-color: var(--color-yellow);
 	border-radius: 1.8em;
 	box-shadow: 0px 0px 10px rgba(59, 21, 0, 0.501);
-	padding: 1.2em;
-	padding-left: 4em;
-	padding-right: 4em;
 
-	position: absolute;
-	top:-1em;
-	left: 5em;
+	margin-top: 1em;
+	margin-bottom: -4em;
+	margin-left: 5rem;
+	margin-right: 5rem;
+
+	padding:1rem 2rem 1rem 2rem;
+
+	position: relative;
+	z-index: 1;
 	
 }
 
-.page2 section:nth-of-type(3) article img { 
+/* Image carousel */
+
+.slider-wrapper {
+	margin: 1rem;
+	position: relative;
+	overflow: hidden;
+	
+  }
+
+.slides-container {
+	height: calc(100vw - auto);
+	width: 100%;
+	display: flex;
+	overflow: scroll;
+	scroll-behavior: smooth;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+
+  }
+
+.slide-arrow {
+	position: absolute;
+	display: flex;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 4rem;
+	padding: 0;
+
+	background-color: var(--color-brown);
+	border: none;
+	width: 3rem;
+	font-size: 3rem;
+	transition: opacity 100ms;
+
+	box-shadow: 0px 0px 10px rgba(59, 21, 0, 0.501);
+  }
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+	background-color: var(--color-yellow);
+  }
+  
+#slide-arrow-prev {
+	color:var(--color-extrawhite);
+	left: 0;
+	padding-left: .8rem;
+	border-radius: 0 2rem 2rem 0;
+  }
+  
+#slide-arrow-next {
+	color:var(--color-extrawhite);
+	right: 0;
+	padding-left: .8rem;
+	border-radius: 2rem 0 0 2rem;
+  }
+  
+.slide {
+	width: 100%;
+	height: 100%;
+	flex: 1 0 100%;
+	
+	
+  }
+
+.slide img {
 	border: .5em solid var(--color-extrawhite);
 	box-shadow: 0px 0px 10px rgba(59, 21, 0, 0.501);
-
-	width: 22.3em;
-	margin-top: 1.5em;
-	z-index: -1;
+	width: 100%;
+	margin-top: 2em;
 	
-}
 
-.page2 section:nth-of-type(3) img { 
-	position: relative;
-	
-}
-
-.tent-persoon {
-	width: 20em;
-	position: absolute;
-	top: -1.8em;
-	left: 1.5em;
-
-}
+  }
 
 
 /****************/
-/* Section 4 Step by step crafting */
+/* Section 5 Step by step crafting */
 /****************/
 
-.page2 section:nth-of-type(4) {
-	background-image: url("../../images/ruit.jpg");
+.page2 section:nth-of-type(5) {
+	background-image: url("./../images/ruit.jpg");
 	background-size: 45em;
-	
 
-	margin-top: -1em;
-	padding-top: 1em;
+	/* margin-top: 1em; */
+	padding-top: .6em;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 }
 
 
-.page2 section:nth-of-type(4) h2 {
-	margin-top: -5.5em ;
+.page2 section:nth-of-type(5) h2 {
+	margin-top: -2em ;
 	margin-bottom: 3em;
 	margin-left:2.3em;
 	margin-right:2.3em;
 	z-index: 1;
 
 	background-color: var(--color-blue);
-	padding: .8em;
+	padding:1rem 2rem 1rem 2rem;
+
+	border-radius: .5em;
 	
 }
 
-.page2 section:nth-of-type(4) p:first-of-type{
-	font-size: 2em;
-	font-family: 'Libre Franklin', sans-serif;
+.page2 section:nth-of-type(5) h3 {
+	margin-bottom: 1em;
+	font-size: 1.3em;
+	
+}
+
+.page2 section:nth-of-type(5) p:first-of-type{
+	font-size: 2.3em;
+	font-family: 'Zilla Slab', serif;
 	background-color: var(--color-extrawhite);
-	border-radius: 5em;
+	border-radius: 10em;
 	border: .25em solid rgba(241,226,111,0.8);
 
 	/* grootte van het rondje */
-	margin-left: 3.1em;
-	margin-right: 3.1em;
+	margin-left: 2.8em;
+	margin-right: 2.8em;
 	padding-bottom: .2em;
 
 	/* plaatsing van het rondje */
 	margin-top: -2em;
-	margin-bottom: 2em;
-
+	margin-bottom: 1em;
 	
 }
 
 
-.page2 section:nth-of-type(4) img {
-	margin-left: 3em;
-
-}
-
-.page2 section:nth-of-type(4) ul:nth-of-type(1) li {
+/* 1,2,3 how to craft */
+.page2 section:nth-of-type(5) ul:nth-of-type(1) li {
 	background-color: var(--color-green);
 	box-shadow: 0px 0px 10px rgba(0, 59, 46, 0.501);
 	border-radius: .5em;
 
 	margin-top: 4em;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
 	margin-bottom: 3em;
-
 	padding: 2em;
 
 }
+
+/* craft plaatjes container */
+.page2 section:nth-of-type(5) ul:nth-of-type(2){
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-bottom: 1.5em;
+	gap:1em;
+	
+	
+}
+
+/* ruimte tussen plaatjes cluster */
+.page2 section:nth-of-type(5) ul:nth-of-type(2) li{
+	padding-bottom: 1em;
+	
+	
+}
+
+/* diy characters spacing */
+.page2 section:nth-of-type(5) ul:nth-of-type(2) li:nth-of-type(4){
+	padding-bottom: 1.5em;
+	padding-left: 3em;
+	padding-right: 3em;
+
+	
+}
+
+
+
+
+
+
 
 
 

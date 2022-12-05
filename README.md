@@ -209,10 +209,9 @@ Meer bijzaken:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Welcome h2 maken en ac logo een h1.
+  - Bewegende achtergrond plaatje , bijv van onder naar boven langzaam laten gaan, background repeat aan.
+  - Hovers animatie toevoegen.
 
 </details>
 

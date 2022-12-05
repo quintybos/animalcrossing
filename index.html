@@ -35,8 +35,8 @@
 		 
 		<ul>
 			<li>
-				<!-- <img src="images/logo-acnh.png"  
-		 		alt="Animal crossing logo">  -->
+				<img src="images/logo-acnh.png"  
+		 		alt="Animal crossing logo"> 
 			</li>
 			<li>
 				<a href="index.html">Home</a> 
@@ -53,9 +53,7 @@
 			<li>
 				<a href="#">Getting started</a> 
 			</li>
-			<li>
-				<a href="#">Happy Home Paradise </a> 
-			</li>
+		
 		</ul>
 	</nav>
 
@@ -73,20 +71,22 @@
 				alt="Animal crossing banner"> 
 			</li>
 			<li> 
-				<img src="images/logo-acnh.png" width="375px" 
+				<img class="SmallBig" src="images/logo-acnh.png" width="375px" 
 				alt="Animal crossing logo"> 
 			</li>
 	
 		</ul>
 	</section>
 
+	<!-- <div id="background-animation"></div> -->
+
 	<section>
 		<h1> Welcome! </h1>
 			<p> Nook Inc. invites you to create your personal island paradise 
 				on a deserted island brimming with possibility. </p>
 				
-			<h3> Watch the trailer </h3>
-			<iframe 
+			<h3 class="SlideInB"> Watch the trailer </h3>
+			<iframe class="SmallBig2"
 			src="https://www.youtube.com/embed/8AkEFot5UF0" 
 			title="YouTube video player" frameborder="0" 
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -95,36 +95,42 @@
 
 	<section>
 		<h2> Your dream getaway begins now. </h2>
-		
-			<img src="images/nook.png" width="140px" 
-			alt="Tom nook "> 
-			
-			<img src="images/packshot.png" width="130px" 
+		<figure> 
+			<img class="FadeInR-animation" src="images/packshot.png" width="130px" 
 			alt="Animal crossing packshot">
-			
-		<a href="url">Buy now</a>
-		<div class="buy-kaart"> </div>
-		
+
+			<img class="FadeInL-animation" src="images/nook.png" width="140px" 
+			alt="Tom nook "> 
+		</figure>	
+		<a class="SmallBig" href="#">Buy now</a>
 	</section>
+
+
 
 	<section>
 		<h2> Island news </h2>
 
-		<h3> Today's birthday: <br> <span> Molly </span> </h3>
+		<article> 
+			<ul> 
+				<li> 
+					<h3 class="SmallBig"> Today's birthday: <br> <span> Molly </span> </h3>
+					
+					<img class="SlideInB" src="images/molly.png" 
+					alt="Molly Villager jarig">
+					
+				</li>
+			</ul>
+		</article> 
 
-		<img src="images/molly.png" 
-		alt="Molly Villager jarig">
-
-		<div class="verjaardag-kaart"> </div>
 	</section>
 
 	<section> 
 		<img class= "verdeler" src="images/banner.svg" width="240px" 
 		alt="Verdeler">
-		<h2> What are the other residents saying?</h2>
+		<h2 class="FadeInLNOR"> What are the other residents saying?</h2>
 
 		<ul>
-			<li>
+			<li class="SmallBig">
 				<img src="images/alfonso.png" width="100px" 
 				alt="Afbeelding villager">
 				<p> This place is the perfect size. Too big to see across, 
@@ -133,7 +139,7 @@
 				</p>
 			</li>
 
-			<li>
+			<li class="SmallBig2">
 				<img src="images/rosie.png" width="100px" 
 				alt="Afbeelding villager">
 				<p> Personally? This island is definitely the best island 
@@ -142,7 +148,7 @@
 				</p>
 			</li>
 
-			<li>
+			<li class="SmallBig3">
 				<img src="images/gulliver.png" width="100px" 
 				alt="Afbeelding villager">
 				<p> Who are you? What is this for? I already donated! 
@@ -155,28 +161,30 @@
 	</section>
 
 	<section> 
-		<h2> Create your getaway </h2>
-		<img class="bloem-icon" src="images/bloem.svg" width="30px" 
-		alt="Bloem icoon">
-		<p> Craft everything from tools to creature comforts 
-			as you create and customize your island community. 
-		</p>
-		<a href="url">Create</a>
-		<div class="create-kaart"> </div>
+		<article>
+			<ul>
+				<li>
+					<img class="SmallBig" src="images/bloem.svg" width="30px" 
+					alt="Bloem icoon">
+					<h2 class="SmallBig"> Create your getaway </h2>
+					<p class="SmallBig" > Craft everything from tools to creature comforts 
+					as you create and customize your island community. 
+					</p>
+					<a class="SmallBig2" href="/create.html">Create</a>
+				</li>
+			</ul>
+		</article>
 
 		<figure> 
-			<img class= "tent" src="images/create-image-1.png" width="390px" 
+			<img class="tent" src="images/create-image-1.png" width="390px" 
 				alt="create tentje">
 			<img class="boom" src="images/create-boom.png" width="120px" 
 				alt="losse denneboom">
-			<img class="bloem" src="images/create-bloem.png" width="120px" 
-				alt="losse mooie bloemen">
 			<img class= "knutsel" src="images/create-image-2.png" width="350px" 
 				alt="create knutselen">
 		</figure>
 
 	</section>
-
 </main>
 <footer>
 

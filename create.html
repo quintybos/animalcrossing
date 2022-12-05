@@ -9,7 +9,7 @@
 	<title>Animal Crossing</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml"  href="./images/leaf.png">
 </head>
 
 <body class="page2">
@@ -29,13 +29,15 @@
 	</button>
 	
 	<nav> 
-		<button> <img src="images/kruis.svg" width="100px" 
+		<button> <img src="images/kruis.svg" 
 			alt="sluit het menu">
 		</button>
-		
-		<img src="images/logo-acnh.png" width="200px"  
-		 alt="Animal crossing logo">  
+		 
 		<ul>
+			<li>
+				<img src="images/logo-acnh.png"  
+		 		alt="Animal crossing logo"> 
+			</li>
 			<li>
 				<a href="index.html">Home</a> 
 			</li>
@@ -51,63 +53,74 @@
 			<li>
 				<a href="#">Getting started</a> 
 			</li>
-			<li>
-				<a href="#">Happy Home Paradise </a> 
-			</li>
 		</ul>
 	</nav>
-	<img class= "switchlogo" src="images/logo-nintendo-switch.svg" 
+
+	<img src="images/logo-nintendo-switch.svg" 
 	alt="logo van nintende switch">
+
+
 </header>
 
 </main>
+		
+	<section>
 		<video autoplay loop>
 			<source src="./video/create-video.mp4" type="video/mp4">
 		</video>
-
-	<section>
-		<h2> Create your getaway </h2>
-		<img src="images/logo-acnh.png" width="375px" 
+		
+		<img class="SmallBig3" src="images/logo-acnh.png" width="375px" 
 		alt="Animal crossing logo"> 
 	</section>
 
 	<section> 
+		<h2 class="SlideInB"> Create your getaway </h2>
 		<img class="verdeler" src="images/banner2.svg" width="375px" 
 		alt="Animal crossing banner">
-		<h2> Customize your personal island getaway</h2>
-		<p> Create your own paradise and customize your character, home, 
+		<h3 class="SlideInB" > Customize your personal island getaway</h3>
+		<p class="SlideInB"> Create your own paradise and customize your character, home, 
 			decorations, and even the landscape itself. You decide what to build 
 			and where—inside or out! 
 		</p>
 	</section>
 
 	<section> 
-		<h2> Home sweet home..., tent sweet tent! </h2>
-		<p> Take time wandering the island to find the perfect spot for your homestead. Will it be… 
+		<h2 class="SmallBig"> Home sweet home..., tent sweet tent! </h2>
+		<p class="SmallBig2"> Take time wandering the island to find the perfect spot for your homestead. Will it be… 
 		</p>
-		<div class="home-kaart"></div>
+	</section>
 
-		<article> 
-		<p> ...On the beach? </p>
-		<img src="images/create-slide1.jpeg" width="200px" 
-		alt="jij op het strand"> 
-		<img src="images/create-slide2.webp" width="200px" 
-		alt="jij op het gras"> 
-		<img src="images/create-slide3.webp" width="200px" 
-		alt="jij naast je buurman"> 
-		</article>
 
-		<img class="tent-persoon" src="images/create-persoon.png" width="200px" 
-		alt="tentje en persoon"> 
+	<section class="slider-wrapper"> 
+		
+		<button class="slide-arrow" id="slide-arrow-prev">
+			&#8249;
+		  </button>
+
+		  <button class="slide-arrow" id="slide-arrow-next">
+			&#8250;
+		  </button>
+
+		  <ul class="slides-container" id="slides-container">
+			
+			<li class="slide"> <p class="SmallBig3"> ...On the beach? </p> <img src="images/create-slide1.jpeg" width="200px" 
+				alt="jij op het strand"> </li>
+
+			<li class="slide"> <p class="SmallBig3"> ...On the grass? </p> <img src="images/create-slide2.webp" width="200px" 
+				alt="jij op het gras"> </li>
+
+			<li class="slide"> <p class="SmallBig3"> ...Next to a neighbor? </p> <img src="images/create-slide3.webp" width="200px" 
+			alt="jij naast je buurman"> </li>
+		  </ul>
 
 	</section>
 
 	<section>
-		<h2> Step-by-step crafting:</h2>
-		<img src="images/diy-character.png" width="200px" 
+		<h2 class="SmallBig" > Step-by-step crafting:</h2>
+		<img class="SmallBig2" src="images/diy-character.png" width="200px" 
 		alt="diy character"> 
 		<ul>
-			<li> 
+			<li class="SlideInB" > 
 				<p> 1</p>
 				<h3> Learn DIY recipes </h3>
 				<p> Learn recipes as you go about your day and 
@@ -116,7 +129,7 @@
 
 			</li>
 
-			<li> 
+			<li class="SlideInB"> 
 				<p> 2</p>
 				<h3> Gather materials </h3>
 				<p> The island is abundant in resources such as 
@@ -125,7 +138,7 @@
 
 			</li>
 
-			<li> 
+			<li class="SlideInB" >
 				<p> 3</p>
 				<h3> Visit Tom Nook’s workbench </h3>
 				<p> With the right materials, crafting is a snap! 
@@ -136,37 +149,37 @@
 		</ul>
 
 		<ul>
-			<li> 
+			<li class="SmallBig" > 
 				<img src="images/crafting-item-1.png" width="50px" 
 				alt="hout stok"> 
 			</li>
 
-			<li> 
+			<li class="SmallBig" > 
 				<img src="images/crafting-item-2.png" width="50px" 
 				alt="ijzer"> 
 			</li>
 
-			<li> 
+			<li class="SmallBig"> 
 				<img src="images/crafting-item-3.png" width="50px" 
 				alt="hout blok"> 
 			</li>
 
-			<li> 
+			<li class="SmallBig2"> 
 				<img src="images/create-image-2.png" width="300px" 
 				alt="diy characters"> 
 			</li>
 
-			<li> 
+			<li class="SmallBig3"> 
 				<img src="images/crafting-item-4.png" width="50px" 
 				alt="bamboo"> 
 			</li>
 			
-			<li> 
+			<li class="SmallBig3"> 
 				<img src="images/crafting-item-5.png" width="50px" 
 				alt="klei"> 
 			</li>
 			
-			<li> 
+			<li class="SmallBig3"> 
 				<img src="images/crafting-item-6.png" width="50px" 
 				alt="steen"> 
 			</li>
