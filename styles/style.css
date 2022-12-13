@@ -1027,13 +1027,10 @@ Object position bottom zodat ze aan de onderkant van het object staan */
 	background-size: 35em;
 	padding-top: 5.5rem;
 	padding-bottom: 6rem;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	position: relative;
-	z-index: -1;
 
 } 
 
