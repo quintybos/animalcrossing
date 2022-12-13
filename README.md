@@ -227,28 +227,45 @@ Meer bijzaken:
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  #### Screenreader / Muis en Toetsenbord 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Dit zou ik nog verbeteren:
+- Reduce motion en skip to main content word in dezelfde zin uitgesproken. 
+- Buy now knop word tegelijk met youtube in een zin verteld
+- Carousel word als haakje sluit/open verteld, niet volgende/vorige
+- Sluit button werkt niet door de focus:within gebruikt om te tabben, hij word onzichtbaar/overschreven.
 
-
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Dit gaat al goed:
+- Er word verteld hoe je de knop kan bedienen, na wat de knop precies is.
+- Verteld wanneer reduce motion is ingeschakeld of niet
+- Links, buttons staan logisch. 
+- Koppen staan logisch, mist wel h1.
+- Je word niet gespamt met regels en regels aan overbodige tekst, het is lekker straight to the point.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+Kan verbeterd worden:
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Dit gaat al goed:
+- Reduce motion checkbox in een label gezet waardoor de hele regel klikbaar is. Vergroot het click scherm voor slechte motoriek.
+- Buttons hebben genoeg ruimte dat er geen probleem is met klikken.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+Kan verbeterd worden:
+- Met darkmode niet alles teveel op elkaar laten lijken. Het ziet er snel uit als een vlek. Teveel contrast doet ook pijn aan het oog.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Dit gaat al goed:
+- Er zit voeldoende contrast tussen de elementen.
+- Als een button state wat minder kleur contrast heeft word dit gecompenseerd door het groter/kleiner/schuin maken van de state. Zodat het verschil wel word gezien.
+
+<img src="readme-images/week4.png" width="275px" alt="">  
+<img src="readme-images/week4-2.png" width="275px" alt="">  
+<img src="readme-images/week4-3.png" width="275px" alt="">  
+<img src="readme-images/week4-inzoem.png" width="275px" alt="">  
+<img src="readme-images/week4-inzoem2.png" width="275px" alt="">  
+
+
 
 </details>
 
@@ -262,7 +279,15 @@ Meer bijzaken:
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Dit ging goed:
+ - Animaties maken
+ - Darkmode maken
+<img src="readme-images/darkmode-w3.png" width="375px" alt="">  
+
+ Dign ging lastig:
+- img carousel en animaties gaan niet samen in js
+- Errors in mijn js, console
+- Animaties linken, met scroll effect
 
 
   ### Agenda voor meeting
@@ -278,10 +303,7 @@ Meer bijzaken:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - 2 verschillende js bestanden aanmaken, page1 en page2. Zorgt ervoor dat js geen errors krijgt van elementen die niet op die pagina staan. 
 
 </details>
 
@@ -295,19 +317,21 @@ Meer bijzaken:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+- Voor iemand die coderen haat vond ik deze opdracht verassend leuk. Ik heb veel nieuwe kunnen leren waar ik bij de eerste codeer vakken minder aan toe kwam. Ik heb ook vind ik zelf een leuke site gekozen en dat hielp mij ook met het doorzetten. 
+- Ik heb geleerd hoe ik beter kan werken met verschillende handicaps en toegangkelijkheid in mind. Contrast tussen tekst en bg, grootte van de buttons en states vond ik interessant om aan te denken. 
+- Animaties en het blingbling maken van de website vond ik het leukste en ging mij het makkelijkste af. 
+- Dat je niet overal classes voor hoeft te gebruiken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - Responsive krijgen, werken met flexbox of grid was soms lastig. Dit in combinatie met plaatjes op een bepaalde manier over elkaar heen zetten.
+  - Meer animaties en speling van elementen op een nintendo manier. Het werd soms voor mijzelf ook een beetje onoverzichtelijk met hoeveel code ik had, en wat met elkaar reageerde en wat niet. 
+  - Reduce motion knop werkende krijgen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -321,8 +345,10 @@ Meer bijzaken:
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://codepen.io/tutsplus/pen/XWZqGgX?editors=0010 Image carousel met knoppen
+  2. https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/  Observeren van een animatie met scroll
+  3. https://www.w3schools.com/howto/howto_css_custom_checkbox.asp Checkbox maken
+  4. Alle media is van Animal Crossing Nintendo https://www.animal-crossing.com/new-horizons/
+
 
 </details>

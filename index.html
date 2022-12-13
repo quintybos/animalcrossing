@@ -12,15 +12,19 @@
 	<link rel="icon" type="image/svg+xml" href="./images/leaf.png">
 </head>
 
-<body class="page1">
+<body class="page1" id="background-animation" >
 	
 <script defer src="scripts/script.js"></script>
 
 <header> 
 	<label class="checkbox-containter"> Reduce motion
-		<input type="checkbox" checked="checked">
-		<span class="checkmark"></span>
+		<input type="checkbox">
 	</label>
+
+
+	<a class="skip-to-content-link" href="#main">
+		Skip to main content
+	</a>
 
 	<button>
 		<img src="images/icon-menu.svg" width="200px"  
@@ -30,7 +34,7 @@
 	
 	<nav> 
 		<button> <img src="images/kruis.svg" 
-			alt="sluit het menu">
+			alt="close the menu icon">
 		</button>
 		 
 		<ul>
@@ -58,7 +62,7 @@
 	</nav>
 
 	<img src="images/logo-nintendo-switch.svg" 
-	alt="logo van nintende switch">
+	alt="logo from nintende switch">
 	
 </header>
 
@@ -68,41 +72,37 @@
 		<ul> 
 			<li> 
 				<img src="images/hoofdafbeelding.jpeg" width="375px" 
-				alt="Animal crossing banner"> 
+				alt="Animal crossing banner picture"> 
 			</li>
 			<li> 
-				<img class="SmallBig" src="images/logo-acnh.png" width="375px" 
-				alt="Animal crossing logo"> 
+				<h1> <img src="images/logo-acnh.png" width="375px" 
+				alt="Animal crossing logo"> Animal crossing </h1>
 			</li>
 	
 		</ul>
 	</section>
 
-	<!-- <div id="background-animation"></div> -->
 
 	<section>
-		<h1> Welcome! </h1>
+		<h2> Welcome! </h2>
 			<p> Nook Inc. invites you to create your personal island paradise 
 				on a deserted island brimming with possibility. </p>
 				
-			<h3 class="SlideInB"> Watch the trailer </h3>
-			<iframe class="SmallBig2"
-			src="https://www.youtube.com/embed/8AkEFot5UF0" 
-			title="YouTube video player" frameborder="0" 
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-			allowfullscreen></iframe>
+			<a href="#" ><h3> Watch the trailer </h3> </a>
+			<img src="/images/trailer.png" alt="Animal crossing trailer video">
+
 	</section>
 
 	<section>
 		<h2> Your dream getaway begins now. </h2>
-		<figure> 
+		<figure>
 			<img class="FadeInR-animation" src="images/packshot.png" width="130px" 
-			alt="Animal crossing packshot">
+			alt="Animal crossing packshot picture">
 
 			<img class="FadeInL-animation" src="images/nook.png" width="140px" 
-			alt="Tom nook "> 
+			alt="Tom nook picture"> 
 		</figure>	
-		<a class="SmallBig" href="#">Buy now</a>
+		<a href="#">Buy now</a>
 	</section>
 
 
@@ -113,11 +113,9 @@
 		<article> 
 			<ul> 
 				<li> 
-					<h3 class="SmallBig"> Today's birthday: <br> <span> Molly </span> </h3>
-					
-					<img class="SlideInB" src="images/molly.png" 
-					alt="Molly Villager jarig">
-					
+					<h3> Today's birthday: <br> <span> Molly </span> </h3>
+					<img src="images/molly.png" 
+					alt="Molly Villager birthday"> </li>
 				</li>
 			</ul>
 		</article> 
@@ -125,32 +123,32 @@
 	</section>
 
 	<section> 
-		<img class= "verdeler" src="images/banner.svg" width="240px" 
-		alt="Verdeler">
-		<h2 class="FadeInLNOR"> What are the other residents saying?</h2>
+		<img class="verdeler" src="images/banner.svg" width="240px" 
+		alt="Picture of the banner">
+		<h2> What are the other residents saying?</h2>
 
 		<ul>
-			<li class="SmallBig">
+			<li>
 				<img src="images/alfonso.png" width="100px" 
-				alt="Afbeelding villager">
+				alt="Picture of villager ALfonso">
 				<p> This place is the perfect size. Too big to see across, 
 					but too small for a sea monster to attack! 
 					<br> <span> - Alfonso </span>
 				</p>
 			</li>
 
-			<li class="SmallBig2">
+			<li>
 				<img src="images/rosie.png" width="100px" 
-				alt="Afbeelding villager">
+				alt="Picture of villager rosie">
 				<p> Personally? This island is definitely the best island 
 					I've ever seen, or heard of, or imagined, or been to.
 					<br> <span> - Rosie</span>
 				</p>
 			</li>
 
-			<li class="SmallBig3">
+			<li>
 				<img src="images/gulliver.png" width="100px" 
-				alt="Afbeelding villager">
+				alt="Picture of villager  gulliver">
 				<p> Who are you? What is this for? I already donated! 
 					I'm not even from here! 
 					<br> <span> - Gulliver </span>
@@ -164,24 +162,24 @@
 		<article>
 			<ul>
 				<li>
-					<img class="SmallBig" src="images/bloem.svg" width="30px" 
-					alt="Bloem icoon">
-					<h2 class="SmallBig"> Create your getaway </h2>
-					<p class="SmallBig" > Craft everything from tools to creature comforts 
+					<img src="images/bloem.svg" width="30px" 
+					alt="Bloem icon picture">
+					<h2> Create your getaway </h2>
+					<p> Craft everything from tools to creature comforts 
 					as you create and customize your island community. 
 					</p>
-					<a class="SmallBig2" href="/create.html">Create</a>
+					<a href="/create.html">Create</a>
 				</li>
 			</ul>
 		</article>
 
 		<figure> 
 			<img class="tent" src="images/create-image-1.png" width="390px" 
-				alt="create tentje">
+				alt="a picture of a tent">
 			<img class="boom" src="images/create-boom.png" width="120px" 
-				alt="losse denneboom">
+				alt="a picture of a tree">
 			<img class= "knutsel" src="images/create-image-2.png" width="350px" 
-				alt="create knutselen">
+				alt="a picture of people crafting">
 		</figure>
 
 	</section>
@@ -207,22 +205,22 @@
 	<ul>
 		<li> 
 			<img src="images/logo-facebook.svg" 
-			alt="Facebook icoon">
+			alt="Facebook icon">
 		</li>
 	
 		<li> 
 			<img src="images/logo-twitter.svg" 
-			alt="Twitter icoon"> 
+			alt="Twitter icon"> 
 		</li>
 		
 		<li> 
 			<img src="images/logo-youtube.svg" 
-			alt="Youtube icoon">
+			alt="Youtube icon">
 		</li>
 	
 		<li> 
 			<img src="images/logo-instagram.svg" 
-			alt="Instagram icoon"> 
+			alt="Instagram icon"> 
 		</li>
 	</ul>
 
